@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/page.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lxly.css" />
+	</head>
+
+	<body>
+		<div class="top"></div>
+		<script type="text/javascript">
+			$(".top").load("../requestHtml/top.html", function() {
+				$(".sel-box").on("click", function() {
+					$(".top-mask-meng").stop().show().next().stop().show();
+				})
+				var onoff = true;
+				$(".top-mask").children("div").children("div").on("click", function() {
+					if(onoff) {
+						$(this).children("div").slideDown(300).end().children("i").eq(0).html("&#xe65b;")
+						onoff = false;
+					} else {
+						$(this).children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}
+				})
+				$(".top-mask").on("mouseleave", function() {
+					setTimeout(() => {
+						$(this).children("div").children("div").children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}, 1000)
+				})
+				$(".top-mask").children("div").children("div").children("div").children("ul").children("li").on("click", function() {
+					onoff = false;
+					$(this).parent().parent().parent().children("i").html($(this).children("i").html())
+					$(this).parent().parent().parent().children("span").html($(this).children("span").html())
+					var hb = document.getElementsByClassName("div3")[0].children[1];
+					if(hb.innerHTML == "CNY（￥）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "cny"
+					}
+					if(hb.innerHTML == "USD（$）" || hb.innerHTML == "CAD（C$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "usd"
+					}
+					if(hb.innerHTML == "JPY（¥）" || hb.innerHTML == "HKD（H$）" || hb.innerHTML == "MOP（MOP$）" || hb.innerHTML == "TWD（NT$）" || hb.innerHTML == "NZD（NZ$）" || hb.innerHTML == "AUD（A$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "jpy"
+					}
+				})
+
+				$(".top-mask").children("button").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+				$(".top-mask").children(".clone").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+
+				$(".top-right").children("ul").children("li").eq(0).hover(function() {
+					$(this).children("span").slideDown(100)
+				}, function() {
+					$(this).children("span").slideUp(100)
+				})
+			})
+		</script>
+		<div class="header"></div>
+		<script type="text/javascript">
+			$(".header").load("../requestHtml/head.html", function() {
+				$(".load").hover(function() {
+					$(this).stop().animate({
+						height: "164px"
+					}, 200).css({
+						background: "#fff",
+						border: "1px solid #ccc"
+					})
+				}, function() {
+					$(this).stop().animate({
+						height: "37px"
+					}, 200, function() {
+						$(this).css({
+							background: "",
+							border: "none"
+						})
+					})
+				})
+				$(".car").hover(function() {
+					$(this).children("div").slideDown(100).end().css({
+						borderLeft: "1px solid #ccc",
+						borderRight: "1px solid #ccc",
+						borderTop: "1px solid #ccc",
+					})
+				}, function() {
+					$(this).children("div").slideUp(100).end().css({
+						border: ""
+					})
+				})
+			})
+		</script>
+		<div class="nav"></div>
+		<script type="text/javascript">
+			$(".nav").load("../requestHtml/nav.html", function() {
+				$(".fllist01-li").hover(function() {
+					$(this).children(".sub-box").css({
+						display: "block"
+					})
+				}, function() {
+					$(this).children(".sub-box").css({
+						display: "none"
+					})
+				});
+			})
+		</script>
+		<div class="banner">
+			<div class="content">
+				<div class="btn-block">
+					<a>留学</a>
+					<a>旅游</a>
+				</div>
+				<div class="top-block">
+					<div class="Carousel">
+						<div class="imgbox">
+							<img src="http://img4.helper-sys.com/images/17/27/2c2daa7d3e3c344492cc2eb6ac88a7b3b329484c.jpg?1499237211#w" />
+							<img src="http://img4.helper-sys.com/images/17/27/cc83af6f2f8c59af01ec0ebd079a06e829751e25.jpg?1499330105#w" />
+						</div>
+						<a class="prev"></a>
+						<a class="next"></a>
+						<ul class="items">
+							<li>
+								<a></a>
+							</li>
+							<li>
+								<a></a>
+							</li>
+						</ul>
+					</div>
+					<p class="tit-box">
+						<span>西集网·留学频道全新开放</span><br />
+						<span>STUDY ABROAD SERVICE OPENING NOW</span>
+					</p>
+					<div class="text-block">
+						<ul class="text-left">
+							<li>
+								<p>海外团队筛选专业团队</p>
+								<p>西集网海外团队筛选当地历史悠久，教育部承认且资质齐全的专业团队，提供最新最准确的留学信息</p>
+							</li>
+							<li>
+								<p>完善的服务体系</p>
+								<p>针对境外产生的投诉，西集网海外团队会在当地直接跟进协调，解决海外留学的后顾之忧</p>
+							</li>
+							<li>
+								<p>便捷的学费支付方式</p>
+								<p>学费和生活费换汇、支付方式繁琐，西集网提供便捷灵活的学费支付方式，节省时间和精力</p>
+							</li>
+
+						</ul>
+						<ul class="text-right">
+							<li>随着国内家庭经济能力的提升和各国留学政策的日益开放，我国出国留学人数逐年增加，更出现了日益低龄化的趋势。但留学机构资质水平参差不齐，不同学校的申请政策千差万别，换汇手续繁琐，中介后续服务跟进不到位却成为家长们最头疼的问题。</li>
+							<li>西集网基于海外分公司的区位和资源优势，最新开放留学频道，甄选当地历史悠久、资质齐全的留学机构，为留学生提供留学方案咨询和规划等一站式服务。</li>
+							<li>目前新西兰高中、本科、研究生已开放，澳洲、美国、欧洲地区留学服务正在推进中，敬请期待。</li>
+						</ul>
+					</div>
+				</div>
+				<div class="main-block01">
+					<p class="tit-box">
+						<span>为何在新西兰选择中纽留学</span><br />
+						<span>WHY CHOOSE XIJI.COM AS THE TRANSFERRING CENTER</span>
+					</p>
+					<div class="text-box">
+						<div>
+							<p>中纽文化交流中心成立于1999年，总部位于新西兰最大的城市奥克兰市中心，是一家新西兰发展最早的大型跨国国际咨询服务中心。我们凭借与新西兰各大公立和私立院校的长期良好的合作伙伴关系和本土专业高效的资深团队优势，为客户提供全方位<strong>&nbsp;·&nbsp;</strong>优质<strong>&nbsp;·&nbsp;</strong>高效<strong>&nbsp;·&nbsp;</strong>专业的 新西兰留学移民、文化交流等各项服务。</p>
+							<p>多年来为促进中国和新西兰之间的文化学术交流及教育合作起到了举足轻重的作用，成为两国国际间多元化发展的大型综合性服务平台。<br>中纽文化交流中心秉承<strong>“提供最全面的信息，最专业高效的团队和最诚信的原则”</strong>，致力于为每一位客户提供最优质到位的服务。</p>
+						</div>
+						<ul>
+							<li>
+								<img src="http://img2.helper-sys.com/images/17/27/ed8f8d2d3894063b8a4496f259859e354ae3cdbf.png?1499049989#h" />
+								<p>经中国领馆认证的新西兰本土机构</p>
+								<p>新西兰教育部认可的国际教育代理机构，并首批获得中国驻奥克兰总领事馆认证。</p>
+							</li>
+							<li>
+								<img src="http://img2.helper-sys.com/images/17/27/ed2847621e2515ab4437d3220b3a43bea0c7fc01.png?1499049997#h" />
+								<p>直接代理新西兰所有院校</p>
+								<p>获得新西兰各大名校和优秀中小学直接授权代理，提供最新最准确的信息和服务。</p>
+							</li>
+							<li>
+								<img src="http://img0.helper-sys.com/images/17/27/6b5a2c5aa2739e67a855a6cf1804bdaa0bad0889.png?1499050005#h" />
+								<p>全方位的优质服务</p>
+								<p>根据实际情况量身定制最优留学计划，并提供学校申请、签证、工作机会、境内旅游等优质服务。</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="main-block02">
+					<p class="tit-box">
+						<span>留学方案</span><br />
+						<span>STUDY ABROAD PROGRAM</span>
+					</p>
+					<div class="main-block02-inner">
+						<p class="sub-tit">
+							<span>
+								<img src="http://img0.helper-sys.com/images/17/27/07ffcad10df691410a50e7277c6f6fa96992386b.png?1499050013#h"/>
+								中学留学
+							</span>
+						</p>
+						<ul>
+							<a>
+								<li>
+									<img src="http://img4.helper-sys.com/images/17/27/9f12879c8e9494f8478c84af64a9c216e8f836c1.jpg?1499157744#h" />
+									<div class="tit">
+										<span></span>
+										<p>新西兰 高中生留学方案</p>
+										<p>新西兰作为性价比、含金量高的海外留学始发站，教育资源丰富的先进国家，把教育的质量放在首位，用市场的认知度考核学校教育的成效，把受教育者综合素质的提高作为办学的宗旨。已成为很多家长的首选，高中毕业后，学生有多种选择。学生可以选择继续在新西兰当地读本科，或者在高中毕业后选择去其他国家就读本科课程。</p>
+										<p><span>了解更多</span></p>
+									</div>
+								</li>
+							</a>
+							<li>
+								<img src="http://img0.helper-sys.com/images/17/27/e46eea63ead30fb0d1a32e715b70bbbddbc768df.jpg?1499063977#h" />
+								<p>爱普森女子文法学校</p>
+							</li>
+							<li>
+								<img src="http://img3.helper-sys.com/images/17/27/8334e1cdb17c27dca1f840b4557420f10eaeb347.jpg?1499066984#h" />
+								<p>塔卡普纳文法学校</p>
+							</li>
+							<li>
+								<img src="http://img1.helper-sys.com/images/17/27/ed13812a26f2aaa08ee354c86ecf7ade06ad9ce2.jpg?1499066992#h" />
+								<p>西湖女子高级中学</p>
+							</li>
+							<li>
+								<img src="http://img3.helper-sys.com/images/17/27/9220539593b911de5ca7056cd1ef795a0c51d078.jpg?1499067000#h" />
+								<p>麦克林斯中学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="main-block02-inner">
+						<p class="sub-tit">
+							<span>
+								<img src="http://img0.helper-sys.com/images/17/27/a6f58a09974136770dd9d6690e1928994f8521c0.png?1499050021#h"/>
+								本科留学
+							</span>
+						</p>
+						<ul>
+							<a>
+								<li>
+									<img src="http://img1.helper-sys.com/images/17/27/8895b410605bef23b18d62c17aa460aaedd99344.jpg?1499066963#h" />
+									<div class="tit">
+										<span></span>
+										<p>新西兰 本科生留学方案</p>
+										<p>从目前的留学形式来看，出国就读依旧是大多数中国学生的选择，其中热门的留学国家包括：新西兰、英国、美国等等国家。新西兰的大学，实际性更强，他们所教授的课程不仅具有极高的学术水平，还能适应飞速变化的人力市场。</p>
+										<p><span>了解更多</span></p>
+									</div>
+								</li>
+							</a>
+							<li>
+								<img src="http://img2.helper-sys.com/images/17/27/d28dd5720deef1e7c47aef7d2bf14d53eedc0171.jpg?1499067010#h" />
+								<p>奥克兰大学</p>
+							</li>
+							<li>
+								<img src="http://img4.helper-sys.com/images/17/27/9cf7b00e0012645854400dec73c08954674d9138.jpg?1499067065#h" />
+								<p>梅西大学</p>
+							</li>
+							<li>
+								<img src="http://img1.helper-sys.com/images/17/27/b1204b8127128b1742aa6b5b99224cc525f7864f.jpg?1499067075#h" />
+								<p>奥塔哥大学</p>
+							</li>
+							<li>
+								<img src="http://img3.helper-sys.com/images/17/27/6238986bee6bc09b702117395cbdb178d7f8cb68.jpg?1499067082#h" />
+								<p>怀卡托大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="main-block02-inner">
+						<p class="sub-tit">
+							<span>
+								<img src="http://img1.helper-sys.com/images/17/27/11a12d376b0fb4cf9e23e9779761e6b84b223f35.png?1499050030#w"/>
+								研究生留学
+							</span>
+						</p>
+						<ul>
+							<a>
+								<li>
+									<img src="http://img2.helper-sys.com/images/17/27/abdfa59107c98cebb39ede70dac3dc2a95af8e59.jpg?1499066977#h" />
+									<div class="tit">
+										<span></span>
+										<p>新西兰 研究生留学方案</p>
+										<p>在所有的留学热门国家中，新西兰的学费非常经济实惠。以最少的投资，得到同样高品质的教育，学生还有很多机会打工，既丰富业余生活，积累经验，又可以赚钱补贴留学花费。</p>
+										<p><span>了解更多</span></p>
+									</div>
+								</li>
+							</a>
+							<li>
+								<img src="http://img4.helper-sys.com/images/17/27/2dd8319ce0f59327b109a69a303b97321d1e3d22.jpg?1499067090#h" />
+								<p>维多利亚惠灵顿大学</p>
+							</li>
+							<li>
+								<img src="http://img4.helper-sys.com/images/17/27/d3e7b5c41b8ff72c4bd8b65fa3300858d8d65073.jpg?1499067099#h" />
+								<p>奥克兰理工大学</p>
+							</li>
+							<li>
+								<img src="http://img2.helper-sys.com/images/17/27/512c3ead0e4d1d478a1f4e69618778ea815ab57a.jpg?1499067106#h" />
+								<p>林肯大学</p>
+							</li>
+							<li>
+								<img src="http://img2.helper-sys.com/images/17/27/d607d3d8cff7609e457c0d3a99caaa4d0d314d3d.jpg?1499067112#h" />
+								<p>坎特伯雷大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="main-block02-inner">
+						<p class="sub-tit">
+							<span>
+								<img src="http://img4.helper-sys.com/images/17/38/b06020d7ee0d5d3077c7b1b834df5acc22c45ea3.jpg?1505801894#w"/>
+								留学相关服务
+							</span>
+						</p>
+						<ul class="service">
+							<li>
+								<a>
+									<img src="http://img4.helper-sys.com/images/17/38/d7d5ce71b7295c2bde4bd6b2105560da11fd791b.jpg?1505801901#w" />
+									<p>入学通知书申请</p>
+									<p>费用只是作为申请3所院校的服务押金，申请人入学后，一个月内，退还押金。</p>
+									<p>了解更多</p>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="http://img1.helper-sys.com/images/17/38/0107fdd1e30fc8574e4382f06f91d62ff59eb0a4.png?1505801910#w" />
+									<p>新西兰留学签证申请服务</p>
+									<p>新西兰留学签证申请服务费用，不包含新西兰移民局收取的审理费。</p>
+									<p>了解更多</p>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="http://img3.helper-sys.com/images/17/38/4fb7091be1467391a94139a63119500eb6449d6a.jpg?1505801918#w" />
+									<p>新西兰留学增值服务</p>
+									<p>为孩子提供初到奥克兰服务，学习类以及生活类的后续服务。</p>
+									<p>了解更多</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="main-block05">
+					<p class="tit-box">
+						<span>留学办理流程</span><br />
+						<span>PROCESS OF STUDYING ABROAD</span>
+					</p>
+					<img src="http://img3.helper-sys.com/images/17/38/692af4141484d269317e875a644b5b642c2e8e5a.png?1505871683#w" />
+				</div>
+				<div class="main-block06">
+					<p class="tit-box">
+						<span>资质认证</span><br />
+						<span>QUALIFICATION</span>
+					</p>
+					<div class="Carousel">
+						<div class="imgbox">
+							<div>
+								<img src="http://img4.helper-sys.com/images/17/27/4799e52e75cb98974340d340ed48c9d05a333fb6.jpg?1499158770#h" />
+								<img src="http://img4.helper-sys.com/images/17/27/5420223abb8c84d0f02e91fca54e479134dbc50b.jpg?1499158778#h" />
+								<img src="http://img0.helper-sys.com/images/17/27/554b1e7ef90c14a2601dbc6c5f76f3c5c9de4f9a.jpg?1499158786#h" />
+								<img src="http://img2.helper-sys.com/images/17/27/25d489f46e99916ceb284e50bdaf8c4aad504ac2.jpg?1499158795#h" />
+							</div>
+							<div>
+								<img src="http://img0.helper-sys.com/images/17/27/3a58b05d538a4b20a50648accd73d0f82e1fd6df.jpg?1499158805#h" />
+								<img src="http://img0.helper-sys.com/images/17/27/cadeb417437c5b9c8068697ca3bdb2d39699d968.jpg?1499158814#h" />
+								<img src="http://img0.helper-sys.com/images/17/27/677c996b9149f698b264846c5d51dfb2666e3220.jpg?1499158820#h" />
+								<img src="http://img4.helper-sys.com/images/17/27/b1420ec80825a424ae98b6e9bf133dddcc4057de.jpg?1499158859#h" />
+							</div>
+						</div>
+						<a class="prev">
+							<img src="http://img4.helper-sys.com/images/17/27/65e0e63de1283be07901cc67c39bbfb17a96cd2d.png?1499157903#h" />
+						</a>
+						<a class="next">
+							<img src="http://img1.helper-sys.com/images/17/27/48c7ac6f26e98b2b4d713b2535ddccc8c9e26708.png?1499157910#h" />
+						</a>
+						<div class="items">
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+							<a></a>
+						</div>
+					</div>
+				</div>
+				<div class="main-block03">
+					<p class="tit-box">
+						<span>留学生活视频</span><br />
+						<span>LIFE VIDEO</span>
+					</p>
+					<ul>
+						<li>
+							<div>
+								<iframe src="http://player.youku.com/embed/XMjg2Njk3ODE0OA==?client_id=5a6efe5eca40c1a9&password=undefined&autoplay=false&onPlayStart=function (){
+						player02.pauseVideo();
+						player03.pauseVideo();
+						ga('send', 'event', '留学频道-视频点击', '视频');
+					}" width="100%" height="100%" frameborder="0" allowfullscreen="true" scrolling="0"></iframe>
+							</div>
+							<p>中纽文化交流中心2016年活动回顾</p>
+						</li>
+						<li>
+							<div>
+								<iframe src="http://player.youku.com/embed/XMjg2Njk4NTcyNA==?client_id=5a6efe5eca40c1a9&password=undefined&autoplay=false&onPlayStart=function (){
+					player01.pauseVideo();
+					player03.pauseVideo();
+					ga('send', 'event', '留学频道-视频点击', '视频');
+				}" width="100%" height="100%" frameborder="0" allowfullscreen="true" scrolling="0"></iframe>
+							</div>
+							<p>中纽文化交流中心江西卫视受访资料</p>
+						</li>
+						<li>
+							<div>
+								<iframe src="http://player.youku.com/embed/XMjg2Njk3NTQ3Mg==?client_id=5a6efe5eca40c1a9&password=undefined&autoplay=false&onPlayStart=function (){
+					player01.pauseVideo();
+					player02.pauseVideo();
+					ga('send', 'event', '留学频道-视频点击', '视频');
+				}" width="100%" height="100%" frameborder="0" allowfullscreen="true" scrolling="0"></iframe>
+							</div>
+							<p>中纽留学生新西兰Piha徒步活动</p>
+						</li>
+					</ul>
+				</div>
+				<div class="main-block04">
+					<p class="tit-box">
+						<span>常见Q & A</span><br />
+						<span>COMMON Q & A</span>
+					</p>
+					<ul>
+						<li>
+							<p><span>Q：</span>家长是否可以陪读？</p>
+							<p><span>A：</span>18岁以下父母一方都可以陪读，孩子5-11岁必须由父母一方陪读。如果父母没有时间，法院指定的监护人可以陪读。陪读家长可以申请每周20个小时的工作时间，新西兰法定最低工资 15.75 纽币，相当于每小时近80元人民币。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>学生留学住学校公寓还是自己租房子？</p>
+							<p><span>A：</span>一般对于刚刚来留学的孩子，建议是居住在外国人家（Homestay），包吃包住，适应生活后可以自己租房子（18岁以下除外），一般大学有自己公寓但名额很少，需提前申请。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>自己住省钱还是寄宿家庭省钱？</p>
+							<p><span>A：</span>通常来说，寄宿家庭是比较省钱，因为自己住的时候会时常外面吃，相对费用会高，如果完全自己煮食，自己住省钱。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>中国驾照可以在新西兰开车吗？</p>
+							<p><span>A：</span>国内驾照只要经过正规翻译公司翻译后，可以在新西兰开一年，期间可以考新西兰全牌照。新西兰驾驶方向和中国是相反的，需要时间适应，但是大家非常遵守交通规则，非常容易上手。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>几岁可以开始留学？孩子是高中出来好，还是大学毕业出来读研究生好？</p>
+							<p><span>A：</span>新西兰政府规定，5岁以上可以开始留学，越早出来的孩子，英文越好，越容易融入当地文化，专业选择上更适合自己。大学毕业出来，因为大学专业，成绩和大学声誉，已经限定了申请研究生的方向和学校。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>学费和生活费一般要准备多少？</p>
+							<p><span>A：</span>公立小学1万2纽币左右（年），私立小学2万纽币左右（年），公立中学1万5纽币左右（年），私立中学2.5万纽币左右（年），大学2- 3万纽币左右（年），不同院校和专业，学费不同。移民局规定每个月账户里要有1250纽币生活费，一年1.5万纽币。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>国内高中毕业可以直接入读新西兰大学吗？</p>
+							<p><span>A：</span>目前只有梅西大学和坎特博雷大学接受国内高考一本成绩，如果考生达到当地一本线，可以直接入读，免去一年预科学习，雅思6分，单项不低于5.5。如果是达到2本线，可以入读19所理工大学。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>来新西兰之前一定要考雅思吗？</p>
+							<p><span>A：</span>不需要，学生可以来读一段时间语言，通过内部考试或语言直升班入读专业课程。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>读大学期间，可以打工吗？打工可以负担生活费吗？</p>
+							<p><span>A：</span>可以，读书期间，每个星期可以工作20个小时，假期可全职工作。如果读书期间和假期都工作，可以负担正常生活花销。</p>
+						</li>
+						<li>
+							<p><span>Q：</span>毕业之后可以在新西兰工作和移民吗？</p>
+							<p><span>A：</span>2年以上学历毕业，有一年开放式工作签证，学生可以自己找工作，找到工作，雇主可以担保工作签证，满足条件后可申请技术移民。</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="helper"></div>
+		<script type="text/javascript">
+			$(".helper").load("../requestHtml/helper.html")
+		</script>
+		<div class="footer"></div>
+		<script type="text/javascript">
+			$(".footer").load("../requestHtml/footer.html")
+		</script>
+		<div class="topic">
+			<img src="http://img4.helper-sys.com/images/17/27/ae0e8f9177bde9a003c42f054052e7aa368891f3.png?1499338759#h" />
+			<img src="http://img3.helper-sys.com/themes/ecstore/images/topics/topic_right_btm.gif" />
+		</div>
+	</body>
+
+	<script src="../libs/jQ-banner-2.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../libs/jquery-Carousel-2.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/lxly.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/page.css" />
+		<link rel="stylesheet" type="text/css" href="../css/gjdq.css" />
+	</head>
+
+	<body>
+		<div class="top"></div>
+		<script type="text/javascript">
+			$(".top").load("../requestHtml/top.html", function() {
+				$(".sel-box").on("click", function() {
+					$(".top-mask-meng").stop().show().next().stop().show();
+				})
+				var onoff = true;
+				$(".top-mask").children("div").children("div").on("click", function() {
+					if(onoff) {
+						$(this).children("div").slideDown(300).end().children("i").eq(0).html("&#xe65b;")
+						onoff = false;
+					} else {
+						$(this).children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}
+				})
+				$(".top-mask").on("mouseleave", function() {
+					setTimeout(() => {
+						$(this).children("div").children("div").children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}, 1000)
+				})
+				$(".top-mask").children("div").children("div").children("div").children("ul").children("li").on("click", function() {
+					onoff = false;
+					$(this).parent().parent().parent().children("i").html($(this).children("i").html())
+					$(this).parent().parent().parent().children("span").html($(this).children("span").html())
+					var hb = document.getElementsByClassName("div3")[0].children[1];
+					if(hb.innerHTML == "CNY（￥）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "cny"
+					}
+					if(hb.innerHTML == "USD（$）" || hb.innerHTML == "CAD（C$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "usd"
+					}
+					if(hb.innerHTML == "JPY（¥）" || hb.innerHTML == "HKD（H$）" || hb.innerHTML == "MOP（MOP$）" || hb.innerHTML == "TWD（NT$）" || hb.innerHTML == "NZD（NZ$）" || hb.innerHTML == "AUD（A$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "jpy"
+					}
+				})
+
+				$(".top-mask").children("button").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+				$(".top-mask").children(".clone").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+
+				$(".top-right").children("ul").children("li").eq(0).hover(function() {
+					$(this).children("span").slideDown(100)
+				}, function() {
+					$(this).children("span").slideUp(100)
+				})
+			})
+		</script>
+		<div class="header"></div>
+		<script type="text/javascript">
+			$(".header").load("../requestHtml/head.html", function() {
+				$(".load").hover(function() {
+					$(this).stop().animate({
+						height: "164px"
+					}, 200).css({
+						background: "#fff",
+						border: "1px solid #ccc"
+					})
+				}, function() {
+					$(this).stop().animate({
+						height: "37px"
+					}, 200, function() {
+						$(this).css({
+							background: "",
+							border: "none"
+						})
+					})
+				})
+				$(".car").hover(function() {
+					$(this).children("div").slideDown(100).end().css({
+						borderLeft: "1px solid #ccc",
+						borderRight: "1px solid #ccc",
+						borderTop: "1px solid #ccc",
+					})
+				}, function() {
+					$(this).children("div").slideUp(100).end().css({
+						border: ""
+					})
+				})
+			})
+		</script>
+		<div class="nav"></div>
+		<script type="text/javascript">
+			$(".nav").load("../requestHtml/nav.html", function() {
+				$(".fllist01-li").hover(function() {
+					$(this).children(".sub-box").css({
+						display: "block"
+					})
+				}, function() {
+					$(this).children(".sub-box").css({
+						display: "none"
+					})
+				});
+			})
+		</script>
+		<div class="banner">
+			<div class="content">
+				<img src="http://img2.helper-sys.com/image/ac7b80cfbe544cf8c76687fb734481dc580f1d34.jpg?1494311414#w" />
+				<div class="countrylist">
+					<ul>
+						<li class="item0">
+							<a>随便看看<br/>点击穿越</a>
+						</li>
+						<li class="item1">
+							<a>日本馆<br/>点击查看</a>
+						</li>
+						<li class="item2">
+							<a>美国馆<br/>点击查看</a>
+						</li>
+						<li class="item3">
+							<a>新西兰馆<br/>点击查看</a>
+						</li>
+						<li class="item4">
+							<a>澳洲馆<br/>点击查看</a>
+						</li>
+						<li class="item5">
+							<a>中国香港馆<br/>点击查看</a>
+						</li>
+						<li class="item6">
+							<a>英国馆<br/>点击查看</a>
+						</li>
+						<li class="item7">
+							<a>德国馆<br/>点击查看</a>
+						</li>
+						<li class="item8">
+							<a>更多国家馆<br/>点击查看</a>
+						</li>
+						<li class="item9">
+							<a>瑞典馆<br/>点击查看</a>
+						</li>
+						<li class="item10">
+							<a>中国馆<br/>点击查看</a>
+						</li>
+					</ul>
+				</div>
+				<h2><span><span>全球精彩</span></span></h2>
+				<div class="country-block">
+					<ul>
+						<li class="storeJA conutrystore">
+							<p class="countrytit">
+								<i></i> 日本馆
+								<a><span>进入日本馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img0.helper-sys.com/images/17/43/ae01294216e9b6ca13d2f9ec68b04832e46b6c0e.jpg?1508835248#h" />
+									<div>
+										<a>【香沁水润 唇唇欲动】DHC 蝶翠诗 香氛滋润护唇膏 1.5g 两种香味可选 迷迭香</a>
+										<span>￥36.99</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/7a100f33a8cf5ae8c46f10b813403911f179b494.jpg?1488418264#h" />
+									<div>
+										<a>【国民去汗小白瓶】Deonatulle 天然魔芋晶石止汗棒 60g 杀菌清洁/清新无味</a>
+										<span>￥47.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/85b3bb136267f01b869d40f95e116f681c646d4f.jpg?1487728511#h" />
+									<div>
+										<a>【给眼睛放个假】Santen 参天制药 Medical Guard EX 角膜修复眼药水 12ml </a>
+										<span>￥76.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/e6b1d225b8901d11eb968e2b2a475ef6bed45d61.jpg?1452591335#h" />
+									<div>
+										<a>【日淘眼药水十强永不落】ROHTO 乐敦制药 粉红小花Lycee 眼药水 两款可选 隐形眼镜用 8ml</a>
+										<span>￥46.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/image/fdbeb0b12d4f809c209d43852afadc31c69cb0c6.jpg?1454744519#h" />
+									<div>
+										<a>【打造素颜美肌】Club 出浴素颜保湿护肤粉饼 无需卸妆 26g 花香</a>
+										<span>￥91.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeUS conutrystore">
+							<p class="countrytit">
+								<i></i> 美国馆
+								<a><span>进入美国馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img0.helper-sys.com/image/7e4adee67920db7933456a50f8bf77bbcec2ded3.jpg?1483587441#h" />
+									<div>
+										<a>【美国包邮 税费补贴】3M N95级防雾霾防尘防病毒口罩 8200 20个装</a>
+										<span>￥121.76</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/cd60443ae520f2395f7d454419ae1bc548c9b9cb.jpg?1479109954#h" />
+									<div>
+										<a>【缓解失眠 改善焦虑】Nutrovape 吸入式助眠棒 改善睡眠质量 可吸约200次</a>
+										<span>￥58.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/f87fe0fdcad407769f105daf146f9a17c208f1a9.jpg?1478927811#h" />
+									<div>
+										<a>【两包包邮价】Lindt 瑞士莲 精选软心混合5味巧克力球 50粒*2 600g*2 </a>
+										<span>￥288.09</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/images/17/48/f7763c462f1c9d54a93b3bb0ee209193adbf6716.jpg?1512109510#h" />
+									<div>
+										<a>【手提携带 温暖随行】Contigo 康迪克 时尚渐变不锈钢保冷保温杯 两种颜色可选 591ml*2只 蓝色 标准</a>
+										<span>￥204.22</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/334dea4fdfc96439a438a6a98d63a4a286bd0b90.jpg?1488956436#h" />
+									<div>
+										<a>【轻松减脂】Slimquick 女性3倍减脂减肥果味软糖 60粒</a>
+										<span>￥145.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeNXL conutrystore">
+							<p class="countrytit">
+								<i></i> 新西兰馆
+								<a><span>进入新西兰馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img0.helper-sys.com/image/d0eed0326b7525e994b49c839be2501c6bca368b.jpg?1479375267#h" />
+									<div>
+										<a>【6罐包邮价】Karicare 可瑞康 婴儿羊奶粉1段 900g*6罐 易吸收 不上火 0-6个月保质期至2018年9月9日</a>
+										<span>￥1,282.40</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/1a3c0dbb949cd51541f01dc02bbb9e70a4c65bd9.jpg?1486191314#h" />
+									<div>
+										<a>【新西兰包邮 税费补贴】Lucas Papaw 万能木瓜膏 25g*4支</a>
+										<span>￥137.79</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/aabf660ab59937054f3578353a8f339786213ac9.jpg?1484206208#h" />
+									<div>
+										<a>【新西兰直发 2瓶包邮价】Manuka Health 蜜纽康 麦卢卡蜂蜜 MGO100+ 500g*2瓶</a>
+										<span>￥371.83</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/2f27d8ba607808acd9f86ec350c2309ddbe86807.jpg?1479181919#h" />
+									<div>
+										<a>【2瓶包邮价】Red Seal 红印 天然黑糖糖浆 500g*2 舒缓痛经 补铁补血 </a>
+										<span>￥92.91</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/f0e4524b0c31598ffa0ff975873927df60e8e67d.jpg?1480141278#h" />
+									<div>
+										<a>DU'IT 急救手膜/护手霜 150g 修复粗糙 保湿嫩手 美白</a>
+										<span>￥48.03</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeAUA conutrystore">
+							<p class="countrytit">
+								<i></i> 澳洲馆
+								<a><span>进入澳洲馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img2.helper-sys.com/image/fe5a3013964e12a33ba063ba7d004da94c3151c0.jpg?1461232076#h" />
+									<div>
+										<a>【营养丰富】Blackmores 澳佳宝 孕妇黄金营养素 180粒 孕期营养 呵护胎儿</a>
+										<span>￥162.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/a3d7ab3fe517fceb59c9c5746bbdb94d739d0f0d.jpg?1461296179#h" />
+									<div>
+										<a>【调节血脂】Blackmores 澳佳宝 深海鱼油软胶囊 400粒 原味 血管清道夫</a>
+										<span>￥99.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/59dc5978ac70562e4c56020572e8384982a51702.jpg?1482393480#h" />
+									<div>
+										<a>【婴儿屁屁护理套装】Ego 意高 QV 婴儿滋润霜 250g+Sudocrem 屁屁乐护臀膏 125g+Cushie Tushie 儿童坐便器马桶垫</a>
+										<span>￥186.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/images/18/02/ac9f1104e487920bd5b11f9b03c1b175b6099426.jpg?1515487800#h" />
+									<div>
+										<a>【给你18岁的美肌】EAORON 水光针面膜黑色5片/1盒+水光针面膜白色5片/1盒+第三代水光针10ml*4支</a>
+										<span>￥599.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/image/5f1e838e83cc730f729711c90b7e0fdaeb8b457a.jpg?1487127783#h" />
+									<div>
+										<a>【宝宝全套护齿】Jack N’Jill 儿童天然有机考拉图案漱口杯*1+恐龙图案玉米淀粉牙刷*2+无氟可吞食牙膏（香型随机）50g*2 </a>
+										<span>￥162.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeHK conutrystore">
+							<p class="countrytit">
+								<i></i> 中国香港馆
+								<a><span>进入中国香港馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img1.helper-sys.com/images/17/25/695fa035b51b43d9f48b5c30bc227031a186cace.jpg?1497945017#h" />
+									<div>
+										<a>【太经典的味道】Jo Malone 祖马龙 女士香水 30ml 多种香型可选 英国梨与小苍兰</a>
+										<span>￥471.99</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/images/17/41/e9c76861ed8ebd9fad68ac0450d50c83a864c7fc.jpg?1507625031#h" />
+									<div>
+										<a>【酷感十足】MontBlanc 万宝龙 男士银色针式带头黑色牛皮腰带 9695</a>
+										<span>￥1,459.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/images/17/41/0bfce608374ad875d9ced91336c06db7129a03a5.jpg?1507872579#h" />
+									<div>
+										<a>【结实耐用 两边导流】PEARL METAL 珍珠生活 深型煎锅 IH对应 28cm HB-3034</a>
+										<span>￥169.99</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/images/17/42/d5d94a6ac109f0025329a6be0f5547da7ac755db.jpg?1508391117#h" />
+									<div>
+										<a>【敏感肌肤舒缓之源】Avene 雅漾 活泉水喷雾 300ml</a>
+										<span>￥105.99</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/images/17/38/b8ce327786bd4d77873cd62f702f7e1506986a73.jpg?1505899963#h" />
+									<div>
+										<a>【闪耀魅力色彩】Dior 迪奥 烈艳蓝金唇膏 3.5g #028</a>
+										<span>￥247.99</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeGBA conutrystore">
+							<p class="countrytit">
+								<i></i> 英国馆
+								<a><span>进入英国馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img1.helper-sys.com/image/1f4427a3bede12920ef10a59e77072453729d760.jpg?1476859152#h" />
+									<div>
+										<a>【角逐】Lily Charmed 精灵鹿S925银饰项链 简约情侣锁骨链</a>
+										<span>￥209.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/dfb376154544b4dadaccc022ee28a8042da08904.jpg?1473047770#h" />
+									<div>
+										<a>【优雅至上 珍藏时光】Waitrose 鲜亮水果意大利气泡酒 750ml</a>
+										<span>￥166.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/b56282e2b5adbf1ad50e375e0100c34e9728e03c.jpg?1478850325#h" />
+									<div>
+										<a>【拾丝般柔顺】Grow Gorgeous 睡眠滋养发膜 190ml</a>
+										<span>￥166.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/b56282e2b5adbf1ad50e375e0100c34e9728e03c.jpg?1478850325#h" />
+									<div>
+										<a>【天然抗菌 消炎祛痘】The Body Shop 美体小铺 茶树精油 10ml*2瓶</a>
+										<span>￥179.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/199fc0d866d48d86ef8e4de3611062a7be49241e.jpg?1488936194#h" />
+									<div>
+										<a>【清爽不油腻】The Body Shop 美体小铺 维他命VE眼霜 15ml</a>
+										<span>￥149.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeDEA conutrystore">
+							<p class="countrytit">
+								<i></i> 德国馆
+								<a><span>进入德国馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img2.helper-sys.com/image/d0fed17ce8f76baf1b37bdaac643a8c7d202173a.jpg?1469098343#h" />
+									<div>
+										<a>Aptamil 爱他美 婴幼儿牛奶粉Pre段 800g</a>
+										<span>￥166.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/085849e776ce439eb4e280956093f79b209c37a3.jpg?1468995730#h" />
+									<div>
+										<a>Balea 芭乐雅 膏泥状面膜 两次用量 9种可选 死海矿物泥清洁 2*8ml</a>
+										<span>￥6.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/e209a9ca0f0e17370a48dc79d34885ef024c9e76.jpg?1469411127#h" />
+									<div>
+										<a>Ohropax Soft Mini 专业防噪音耳塞 10个装</a>
+										<span>￥32.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/image/3a61cb3fe2158be42de0892a545cb90fed10ed3f.jpg?1469437655#h" />
+									<div>
+										<a>Dr.C.Soldan 索丹博士 Em-Eukal 儿童止咳润喉糖 无糖型 75g</a>
+										<span>￥17.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/4b8ee502b776bd24d03af03ff8549244d30426d1.jpg?1469494506#h" />
+									<div>
+										<a>Facelle 三滴水 清新香型日用卫生巾 16片/包</a>
+										<span>￥13.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="storeCH conutrystore">
+							<p class="countrytit">
+								<i></i> 中国馆
+								<a><span>进入中国馆</span></a>
+							</p>
+							<ul class="countrygoods">
+								<li>
+									<img src="http://img1.helper-sys.com/image/43acd0e53923d5a5bd853f7f902679ff6e0372ee.jpg?1491965761#h" />
+									<div>
+										<a>【鲜榨健康生活】Morphy Richards 摩飞 蓝色便携式果汁机/榨汁机 MR9200 一机双杯</a>
+										<span>￥319.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/images/18/02/85f1c525abc73832f68f298d6a2b48ce4f8b3e38.jpg?1515462152#h" />
+									<div>
+										<a>【不伤皮肤】Unicharm 尤妮佳 silcot化妆棉1/3去角质卸妆棉 32枚 两规格可选 2盒</a>
+										<span>￥51.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img0.helper-sys.com/image/4359786b561918e1789c812bef339b72b46e8478.jpg?1488353104#h" />
+									<div>
+										<a>【迪士尼系列】 p+g design Tsum Tsum 3D 迪士尼硅胶零钱包 GMC-T3D 多角色可选 Minnie</a>
+										<span>￥106.00</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img1.helper-sys.com/image/c7b863d41e44733f7f70c0a2f2d977f236229d6b.jpg?1494226748#h" />
+									<div>
+										<a>【“没螨”新世界】DEERMA 德尔玛 家用除螨仪 3秒快速除螨/微触控按键/迅猛大吸力 藕粉红 0.5L</a>
+										<span>￥249.99</span>
+									</div>
+								</li>
+								<li>
+									<img src="http://img2.helper-sys.com/image/ac8384705bd67f8f77a7399c5b97463c57dc23bc.jpg?1497319637#h" />
+									<div>
+										<a>【无形的按摩师】MR.OAK 梦橡家 便携式天然乳胶U型枕 BH006 两种颜色可选 红色 32*32*13cm</a>
+										<span>￥168.00</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="country-btn">
+					<ul>
+						<li class="btnJA">
+							<a>
+								<i></i>
+								<p>日本馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnUS">
+							<a>
+								<i></i>
+								<p>美国馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnNXL">
+							<a>
+								<i></i>
+								<p>新西兰馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnAUA">
+							<a>
+								<i></i>
+								<p>澳洲馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnHK">
+							<a>
+								<i></i>
+								<p>中国香港馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnGBA">
+							<a>
+								<i></i>
+								<p>英国馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnDEA">
+							<a>
+								<i></i>
+								<p>德国馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnCH">
+							<a>
+								<i></i>
+								<p>中国馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+						<li class="btnSWE">
+							<a>
+								<i></i>
+								<p>瑞典馆</p>
+								<span>GO</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="helper"></div>
+		<script type="text/javascript">
+			$(".helper").load("../requestHtml/helper.html")
+		</script>
+		<div class="footer"></div>
+		<script type="text/javascript">
+			$(".footer").load("../requestHtml/footer.html")
+		</script>
+
+		<div class="right_navslide"></div>
+		<script type="text/javascript">
+			$(".right_navslide").load("../requestHtml/rightnavslide.html", function() {
+				var bottom = 0;
+				onscroll = onload = function() {
+					var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+					if(scrolltop >= $(".banner").offset().top) {
+						$(".right_navslide").find(".top-link").slideDown(300)
+					} else {
+						$(".right_navslide").find(".top-link").slideUp(300)
+					}
+					if(scrolltop >= $(".banner").find(".storeCH").offset().top - 200) {
+						bottom += 100;
+						if(bottom >= 300) {
+							bottom = 300
+						}
+						$(".right_navslide").css({
+							bottom: bottom + 250
+						})
+					} else {
+						$(".right_navslide").css({
+							bottom: 200
+						})
+					}
+				}
+				$(".right_navslide").find("li").hover(function() {
+					$(this).children("a").children("span").css({
+						backgroundColor: "red"
+					}).end().children("em").show()
+				}, function() {
+					$(this).children("a").children("span").css({
+						backgroundColor: ""
+					}).end().children("em").hide()
+				})
+
+				$(".right_navslide").find(".top-link").on("click", function() {
+					clearInterval(this.timer);
+					this.timer = setInterval(() => {
+						var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+						if(scroll <= 0) {
+							clearInterval(this.timer);
+						} else {
+							scroll = scroll - 200;
+							document.documentElement.scrollTop = document.body.scrollTop = scroll;
+						}
+					}, 20);
+				})
+			})
+		</script>
+	</body>
+
+	<script src="../js/gjdq.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

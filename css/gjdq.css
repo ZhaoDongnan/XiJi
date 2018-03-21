@@ -1,0 +1,75 @@
+.banner .content{width: 1200px; margin: 0 auto;}
+.banner .content>img{margin-top: -23px; display: inline-block; margin-bottom: -4px;}
+.banner .content .countrylist{height: 833px; position: relative; background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/bg_171223.png") 0 0 no-repeat;}
+.banner .content .countrylist ul li{width: 210px;height: 180px; position: absolute;}
+.banner .content .countrylist ul li a{width: 210px; height: 60px; display: block; padding-top: 122px; font-size: 17px; line-height: 1.4; color: #fff; text-align: center;}
+.banner .content .countrylist ul li.item0{top: 72px; left: 39px; background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/other_bg.png") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item1{top: 72px; left: 291px; background: url("http://img0.helper-sys.com/images/17/50/99e8885b2bf296e45d56be7d75f6ea5e552bd832.png?1512997752#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item2{top: 72px; left: 545px; background: url("http://img1.helper-sys.com/images/17/50/87c1a5bce1ed186e3ee0df3989172030f9bc2c20.png?1512998353#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item3{top: 72px; left: 797px; background: url("http://img0.helper-sys.com/image/b517175fb00433406177aa8d00984d43d942984f.png?1493783337#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item4{top: 331px; left: 200px; background: url("http://img0.helper-sys.com/image/ab081be11282de298f11cecf4f4d1b8814d30aeb.png?1493784284#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item5{top: 331px; left: 453px; background: url("http://img0.helper-sys.com/image/8c247011f22f7c17bc48c980fa427e4e3d29b65b.png?1493784389#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item6{top: 331px; left: 708px; background: url("http://img2.helper-sys.com/image/e12f69d65c2fe8c7626fa285b89f34e7786e997c.png?1493784492#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item7{top: 331px; left: 960px; background: url("http://img2.helper-sys.com/image/6356b46b7fd5ba59cc3c6938d22c15a27d9fa24e.png?1493784640#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item8{top: 590px; left: 797px; background: url("http://img0.helper-sys.com/image/dfe1c356aa809c5bbd3b3c4b9accfbd3bb925b04.png?1493790970#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item9{top: 590px; left: 545px; background: url("http://img2.helper-sys.com/image/dcad145fd4cb950676162fc0504dc28594367a04.png?1493791209#h") 0 0 no-repeat;}
+.banner .content .countrylist ul li.item10{top: 590px; left: 290px; background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/more_bg.png") 0 0 no-repeat;}
+.banner .content>h2{height: 100px;}
+.banner .content>h2>span{display: block; width: 180px; height: 100px; line-height: 100px; margin: 0 auto; padding: 0 45px; text-align: center; background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/tit-bg.gif") left center repeat-x;}
+.banner .content>h2>span>span{padding: 0 20px; display: block; margin: 0 auto; font-weight:normal; background: #fff; width: auto;}
+.banner .content .country-block{margin-right: -40px;}
+.banner .content .country-block .conutrystore{width: 578px; height: 500px; float: left; margin: 0 40px 45px 0; border: solid 1px #E7E7E7;}
+.banner .content .country-block .conutrystore .countrytit{height: 50px; border-bottom: solid 1px #333; font-size: 24px; color: #000; background: #E7E7E7; line-height: 50px; padding-left: 75px; position: relative;}
+.banner .content .country-block .conutrystore .countrytit>i{background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/country_icon.png") 0 0 no-repeat; width: 67px; height: 55px; position: absolute; bottom: 12px; left: 5px;}
+.banner .content .country-block .conutrystore .countrytit>a{height: 30px; position: absolute; right: 10px; bottom: 10px; color: #fff; font-size: 14px; line-height: 30px; padding: 0 8px 0 10px; border-radius: 5px;}
+.banner .content .country-block .conutrystore .countrytit>a>span{background: url("http://img0.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/arrow.png") right center no-repeat; padding-right: 12px;}
+.banner .content .country-block .conutrystore .countrygoods{ padding: 10px; display: block; overflow: hidden; background: #fff;}
+.banner .content .country-block .conutrystore .countrygoods li{float: left; padding: 10px 10px 15px 10px; width: 119px;}
+.banner .content .country-block .conutrystore .countrygoods li:nth-child(1){width: 538px; border-bottom: solid 1px #E5E5E5; margin-bottom: 10px;}
+.banner .content .country-block .conutrystore .countrygoods li img{width: 119px; height: 119px; vertical-align:bottom;}
+.banner .content .country-block .conutrystore .countrygoods li:nth-child(1) img{width: 200px; height: 190px; float: left; text-align: left;}
+.banner .content .country-block .conutrystore .countrygoods li:nth-child(1)>div{width: 338px; float: left; height: 190px; position: relative;}
+.banner .content .country-block .conutrystore .countrygoods li:nth-child(1)>div>a{margin: 0; font-size: 16px;}
+.banner .content .country-block .conutrystore .countrygoods li>div>a{margin: 8px 0; display: block; overflow: hidden; font-size: 12px; color: #333; line-height: 1.5em; height: 3.0em;}
+.banner .content .country-block .conutrystore .countrygoods li>div>span{color: red; font-size: 14px; font-weight: bold; }
+.banner .content .country-block .conutrystore .countrygoods li:nth-child(1)>div>span{font-size: 20px; left: 0; bottom: 0; display: block; position: absolute;}
+.banner .content .country-block .storeJA .countrytit{background:#efefef ;}
+.banner .content .country-block .storeJA .countrytit>i{background-position: 0 -110px;}
+.banner .content .country-block .storeJA .countrytit>a{background: #aeaeae;}
+.banner .content .country-block .storeUS .countrytit{background:#f2e9e2 ;}
+.banner .content .country-block .storeUS .countrytit>i{background-position: 0 -55px;}
+.banner .content .country-block .storeUS .countrytit>a{background: #b99270;}
+.banner .content .country-block .storeNXL .countrytit{background:#f1f0f5 ;}
+.banner .content .country-block .storeNXL .countrytit>i{background-position: 0 -220px;}
+.banner .content .country-block .storeNXL .countrytit>a{background: #b3b2cc;}
+.banner .content .country-block .storeAUA .countrytit{background:#e7ebec ;}
+.banner .content .country-block .storeAUA .countrytit>i{background-position: 0 -165px;}
+.banner .content .country-block .storeAUA .countrytit>a{background: #819d9a;}
+.banner .content .country-block .storeHK .countrytit{background:#f3eaeb ;}
+.banner .content .country-block .storeHK .countrytit>i{background-position: 0 -275px;}
+.banner .content .country-block .storeHK .countrytit>a{background: #c19d9d;}
+.banner .content .country-block .storeGBA .countrytit{background:#eef1f6 ;}
+.banner .content .country-block .storeGBA .countrytit>i{background-position: 0 0;}
+.banner .content .country-block .storeGBA .countrytit>a{background: #acbfd9;}
+.banner .content .country-block .storeDEA .countrytit{background:#ebebe1 ;}
+.banner .content .country-block .storeDEA .countrytit>i{background-position: 0 -440px;}
+.banner .content .country-block .storeDEA .countrytit>a{background: #a09d70;}
+.banner .content .country-block .storeCH .countrytit{background:#f9eded ;}
+.banner .content .country-block .storeCH .countrytit>i{background-position: 0 -330px;}
+.banner .content .country-block .storeCH .countrytit>a{background: #e2aaaa;}
+.banner .content .country-btn{margin: 20px 0;}
+.banner .content .country-btn>ul{margin-right: -15px;}
+.banner .content .country-btn>ul li{width: 228px; height: 63px; background-color: #fff; float: left; margin: 0 15px 15px 0;}
+.banner .content .country-btn>ul li a{width: 208px; padding: 15px 0; height: 33px; font-size: 15px; color: #000; display: block;}
+.banner .content .country-btn>ul li a i{width: 40px; height: 33px; margin-right: 10px; display: inline-block; background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/country_icon.png") 0 0 no-repeat;}
+.banner .content .country-btn>ul li a p{height: 33px; display: inline-block; line-height: 33px; vertical-align: 10px;}
+.banner .content .country-btn>ul li a span{float: right; width: 39px; height: 19px; padding: 8px; background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/groupcountry_pc/ar_gray.png") 38px 10px no-repeat; border-radius: 3px; line-height: 19px; color: #666;}
+.banner .content .country-btn>ul li.btnJA a i{background-position: -84px -66px;}
+.banner .content .country-btn>ul li.btnUS a i{background-position: -84px -33px;}
+.banner .content .country-btn>ul li.btnNXL a i{background-position: -84px -132px;}
+.banner .content .country-btn>ul li.btnAUA a i{background-position: -84px -99px;}
+.banner .content .country-btn>ul li.btnHK a i{background-position: -84px -165px;}
+.banner .content .country-btn>ul li.btnGBA a i{background-position: -84px 0;}
+.banner .content .country-btn>ul li.btnDEA a i{background-position: -84px -264px;}
+.banner .content .country-btn>ul li.btnCH a i{background-position: -84px -198px;}
+.banner .content .country-btn>ul li.btnSWE a i{background-position: -84px -231px;}

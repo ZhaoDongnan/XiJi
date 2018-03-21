@@ -1,0 +1,39 @@
+.banner>a{width:1200px; margin:0 auto; height: 390px; margin-bottom: 20px; text-align: center; height: 390px; display: block; background: #F5F5F5;}
+.banner>a img{vertical-align: bottom; border: none; width: 1200px; height: 390px; margin-top: -23px;}
+.banner .tjzt{background: #F5F5F5; position: relative;}
+
+.banner .tjzt .content{width: 1200px; margin: 0 auto;background: #F5F5F5;}
+.banner .tjzt .content ul{width: 1250px; margin-right: -50px; overflow: hidden;}
+.banner .tjzt .content ul li{float: left; width: 575px; height: 310px;margin: 0 50px 30px 0;}
+.banner .tit{background: url("http://img0.helper-sys.com/themes/ecstore/images/topics/topic_tit_bg0120161124.png") center no-repeat;text-align: center;}
+.banner .tit span{color: #35353F; padding: 0 50px; font-size: 25px; line-height: 80px;}
+.banner .tzby{background: #F5F2E3;position: relative;}
+
+.banner .tzby .content{width: 1200px; margin: 0 auto;background: #F5F2E3;}
+
+.banner .tjzt .content .tjzt-tit span{color: #35353F; background: #F5F5F5;}
+.banner .tzby .content .tzby-tit span{color: #35353F; background: #F5F2E3;}
+.banner .rmdp{background: #F5F5F5;position: relative;}
+.banner .rmdp .content{width: 1200px; margin: 0 auto;background: #F5F5F5;}
+.banner .rmdp .content .rmdp-tit span{color: #35353F; background: #F5F5F5;}
+
+.goods-inner{width: 1220px; margin-left: -20px; overflow: hidden; padding-bottom: 50px;}
+.goods-inner li{color: #333; width: 285px; margin: 20px 0 0 20px; float: left;}
+.goods-inner li>div{position: relative; width: 285px; height: 410px; background: #fff;}
+.goods-inner li>div>div{position:absolute;left: 0; top: 0; padding: 20px; border: solid #fff 1px; background: #fff;}
+.goods-inner li:hover>div>div{height: 410px;z-index: 2; box-shadow: 0 0 10px 5px #ccc;}
+.goods-inner li:hover a{display: block;}
+.goods-inner li img{width: 245px; height: 245px;margin-bottom: 10px;}
+.goods-inner li .txt-box{line-height: 1.5;white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 14px; color: #999; margin-bottom: 5px;}
+.goods-inner li .txt-box .price-xj{color: #333; font-size: #333; margin-left: 0; font-weight: bold; vertical-align: middle;}
+.goods-inner li .txt-box .price-market{color: #999; font-size: 14px; text-decoration: line-through;}
+.goods-inner li .tit-box{font-size: 13px; line-height: 20px; height: 39px; overflow: hidden; color: #666;}
+.goods-inner li .tag-box{height: 26px; overflow: hidden;}
+.goods-inner li .tag-box span{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; font-size: 12px; line-height: 16px; height: 16px; padding: 0 2px; margin:  0 3px 3px 2px; color: #fff; background: red; border: solid red 1px;}
+.goods-inner li .tag-box .self{background: #fff; color: red; border: red solid 1px;}
+.goods-inner li>div>div>a{display: block; border: solid 1px red; border-radius: 3px; color: red; height: 32px; line-height: 32px; background: #fff; text-align: center; font-size: 16px; margin: 8px 0 0 !important; display: none;}
+.rightslide{width: 100px; position: fixed; right: 10%; bottom: 60px; z-index: 5;}
+.rightslide ul li:nth-child(1){background: #A05723; padding: 8px; font-size: 16px; color: #fff; text-align: center;	 line-height: 1;}
+.rightslide ul li.tz{border: solid 1px #DCDCDC; height: 30px; width: 98px; margin-bottom: -1px;}
+.rightslide ul li a{display: block; height: 30px; width: 98px; background: #F2F2F2; color: #333; font-size: 14px; text-align: center; line-height: 30px;}
+.rightslide ul li a:hover{background: #ccc}

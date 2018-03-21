@@ -1,0 +1,105 @@
+.banner .content{width: 1200px; margin: 0 auto;}
+.banner .content .content-block{background: #fff; padding: 38px 38px 30px; box-shadow: 0px 10px 2px #eee; border: solid 1px #eee; margin-bottom: 30px;}
+.banner .content .content-block .logo-box{height: 100px; width: 1200px; display: block; margin-bottom: 30px;}
+.banner .content .content-block .content-block-inner{height: 520px;}
+.banner .content .content-block .content-block-inner .text-box{float: right; margin-right: 20px; width: 450px; padding: 0 30px;}
+.banner .content .content-block .content-block-inner .text-box .tit-box a{display: block; font-size: 23px; font-weight: bold; color: #333;margin: 30px 0 20px; line-height: 1.5;}
+.banner .content .content-block .content-block-inner .text-box .txt-box a{display: block; font-size: 14px; color: #666; line-height: 1.6;}
+.banner .content .content-block .content-block-inner .text-box>a{height: 30px; line-height: 30px; background-color: #212121; color: #fff; width: 105px; margin: 20px 0 35px; text-align: center; font-size: 16px; display: block; text-decoration: none; border-radius: 5px;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox{width: 510px; margin: 0 -30px 10px; position: relative;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox{width: 480px; position: relative; overflow: hidden; margin-left:15px; height: 220px; z-index: 2;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul{height: 220px;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul>div{position: absolute; left: 480px; top: 0; height: 220px;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul div:nth-child(1){left: 0;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul div li{float: left; width: 136px; height: 220px; padding: 0 12px; margin: 0; overflow: hidden;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul div li .img-box{width: 136px; height: 136px; margin: 0 0 10px; text-align: center;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul div li .img-box a img{width: 136px; height: 136px;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .imgbox ul div li .tit{font-size: 13px; line-height: 1.4; glyph-orientation-horizontal: 2.8em; overflow: hidden; margin: 10px 0; color: #666;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox>a{position: absolute; top: 50px; width: 15px; height: 50px;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .prev{left: 0; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/l.png") center no-repeat;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .prev:hover{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/l_h.png")  center no-repeat;}
+.banner .content .content-block .content-block-inner .text-box .bannerbox .next{right: 0; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/r.png")  center no-repeat; }
+.banner .content .content-block .content-block-inner .text-box .bannerbox .next:hover{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/r_h.png")  center no-repeat;}
+.banner .content .content-block .content-block-inner .video-box{width: 590px; height: 520px; text-align: right; float: left; position: relative;}
+.banner .content .content-block .content-block-inner .video-box>a{ width: 90px; height: 90px; position: absolute; left: 50%;top: 50%; margin-left: -45px; margin-top: -45px; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/play.png") 0 0 no-repeat; cursor: pointer;}
+.banner .content .content-block .content-block-inner .video-box>a:hover{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/play.png") 0 -90px no-repeat;}
+.banner .content .content-block .btm-box{text-align: center; margin: 30px 0 0 0; font-size: 14px; color: #333;}
+.banner .content .content-block .btm-box a{line-height: 1.0; padding-right: 15px;}
+#content-block00 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180307.png") center top no-repeat;}
+#content-block00 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180307.png") top center no-repeat;}
+#content-block01 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180227.png") center top no-repeat;}
+#content-block01 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180227.png") top center no-repeat;}
+#content-block02 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180213.png") center top no-repeat;}
+#content-block02 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180213.png") top center no-repeat;}
+#content-block03 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180212.png") center top no-repeat;}
+#content-block03 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180212.png") top center no-repeat;}
+#content-block04 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180208.png") center top no-repeat;}
+#content-block04 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180208.png") top center no-repeat;}
+#content-block05 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180130.png") center top no-repeat;}
+#content-block05 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180130.png") top center no-repeat;}
+#content-block06 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180126.png") center top no-repeat;}
+#content-block06 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180126.png") top center no-repeat;}
+#content-block07 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180118.png") center top no-repeat;}
+#content-block07 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180118.png") top center no-repeat;}
+#content-block08 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_180105_01.png") center top no-repeat;}
+#content-block08 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_180105_01.png") top center no-repeat;}
+#content-block09 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171220_01.png") center top no-repeat;}
+#content-block09 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171220_01.png") top center no-repeat;}
+#content-block10 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171213_01.png") center top no-repeat;}
+#content-block10 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171213_01.png") top center no-repeat;}
+#content-block11 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171128_01.png") center top no-repeat;}
+#content-block11 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171128_01.png") top center no-repeat;}
+#content-block12 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171122_01.png") center top no-repeat;}
+#content-block12 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171122_01.png") top center no-repeat;}
+#content-block13 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171117_01.png") center top no-repeat;}
+#content-block13 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171117_01.png") top center no-repeat;}
+#content-block14 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171110_01.png") center top no-repeat;}
+#content-block14 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171110_01.png") top center no-repeat;}
+#content-block15 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171102_01.png") center top no-repeat;}
+#content-block15 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171102_01.png") top center no-repeat;}
+#content-block16 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171024_01.png") center top no-repeat;}
+#content-block16 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171024_01.png") top center no-repeat;}
+#content-block17 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_171024_02.png") center top no-repeat;}
+#content-block17 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_171024_02.png") top center no-repeat;}
+#content-block18 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_01.png") center top no-repeat;}
+#content-block18 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_01.png") top center no-repeat;}
+#content-block19 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_03.png") center top no-repeat;}
+#content-block19 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_03.png") top center no-repeat;}
+#content-block20 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_04.png") center top no-repeat;}
+#content-block20 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_04.png") top center no-repeat;}
+#content-block21 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_05.png") center top no-repeat;}
+#content-block21 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_05.png") top center no-repeat;}
+#content-block22 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_06.png") center top no-repeat;}
+#content-block22 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_06.png") top center no-repeat;}
+#content-block23 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_07.png") center top no-repeat;}
+#content-block23 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_07.png") top center no-repeat;}
+#content-block24 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_08.png") center top no-repeat;}
+#content-block24 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_08.png") top center no-repeat;}
+#content-block25 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_09.png") center top no-repeat;}
+#content-block25 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_09.png") top center no-repeat;}
+#content-block26 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_010.png") center top no-repeat;}
+#content-block26 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_010.png") top center no-repeat;}
+#content-block27 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_011.png") center top no-repeat;}
+#content-block27 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_011.png") top center no-repeat;}
+#content-block28 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_012.png") center top no-repeat;}
+#content-block28 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_012.png") top center no-repeat;}
+#content-block29 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_013.png") center top no-repeat;}
+#content-block29 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_013.png") top center no-repeat;}
+#content-block30 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_014.png") center top no-repeat;}
+#content-block30 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_014.png") top center no-repeat;}
+#content-block31 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_015.png") center top no-repeat;}
+#content-block31 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_015.png") top center no-repeat;}
+#content-block32 .logo-box{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/logo_new_016.png") center top no-repeat;}
+#content-block32 .content-block-inner{background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/amazing/20170828/bg_new_016.png") top center no-repeat;}
+.right-navslide{position: fixed; right: 0; z-index: 5; bottom: 25%; width: 300px; height: 440px; display: none; overflow: hidden;}
+.right-navslide .right-navslide-inner{ position: relative; }
+.right-navslide .right-navslide-inner ul{text-align: right;position: absolute; top: 0; width: 300px;top: 0; padding:  0 0 30px; right: 30px; overflow: hidden;}
+.right-navslide .right-navslide-inner ul li{padding: 10px 0; display:block; text-align: right; }
+.right-navslide .right-navslide-inner ul li a{display: block; font-size: 13px; color: #666; line-height: 1.0;}
+.right-navslide .right-navslide-inner ul li a span{padding-right: 5px; display: inline-block; }
+.right-navslide .right-navslide-inner ul li a .line-bg{display: inline-block; padding: 0; width: 20px; height: 2px; vertical-align: 5px; background: #212121; transition: all .5s;}
+.right-navslide .right-navslide-inner ul li.active a{font-size: 20px;color: #000; font-weight: bold;}
+.right-navslide .right-navslide-inner ul li.active a .line-bg{width: 80px; height: 4px;}
+.right-navslide .right-navslide-bar{position: absolute; top: 0; right: 10px; height: 450px;}
+.right-navslide .right-navslide-bar .track{width: 6px; height: 450px; position: absolute; top: 0;right: 0; background: #E1E1E1;}
+.right-navslide .right-navslide-bar .track .handle{top: 0; left: 0; position: absolute; width: 6px; height: 20px; background: #999;}

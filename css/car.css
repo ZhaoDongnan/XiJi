@@ -1,0 +1,9 @@
+.banner .content{width: 1200px; margin: 0 auto;background: #F5F5F5;}
+.banner .content ul li{width: 1200px; display: flex; justify-content: space-around; height: 60px; text-align: center; height: 90px;}
+.banner .content ul li span{flex:1; border:#ccc solid 1px; text-overflow: ellipsis; overflow: hidden; white-space: initial; line-height: 90px;}
+.banner .content ul li:nth-child(n+2) span:nth-child(2){line-height: normal;}
+.banner .content ul li span img{width: 150px; height: 80px;}
+.banner .content ul:nth-child(2){height: 1000px;}
+.banner .content .kk{width: 300px; margin: 70px auto; background: url("http://img0.helper-sys.com/themes/ecstore/images/cart/cart_empty_icon.png")0 0 no-repeat; border: none; padding: 0 0 0 200px; height: 154px;}
+.banner .content .kk>div p{font-size: 24px;padding: 20px 0; color: #333;}
+.banner .content .kk>div a{display: block; width: 150px; height: 40px; color: red; border: red 1px solid; text-align: center; font-size: 14px; text-decoration: none; line-height: 40px; margin: 0 auto; border-radius: 5px;}

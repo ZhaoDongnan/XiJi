@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0; list-style: none;}
+body{background: #F5F5F5;}
+.register{width: 540px; height: 750px; margin: 0 auto; background: #fff url("http://img2.helper-sys.com/themes/ecstore/images/passport/passport_bg_161124.png")0 0 no-repeat; border: solid 1px #D8D8D8;}
+.register .content{ width: 350px; float: none; padding: 150px 0 0 95px; border: none; background: none; font-size: 14px;}
+.register .content .country{height: 49px; margin-bottom: 20px; position: relative; border: solid 1px #D8D8D8; width: 348px;cursor: pointer; vertical-align: middle; line-height: 49px;}
+.register .content .country lable{position: absolute; left: 13px; top: -10px; color: #A3A3A3; text-align: left; background: #fff; padding: 0 10px; font-size: 14px; line-height: normal;}
+.register .content .country>i:nth-child(2){float: right;}
+.register .content .country>i:nth-child(3){margin: 3px 5px;}
+.register .content .country>div{position:absolute; top: 49px; height: 160px;  width: 100%;overflow: auto; font-size: 14px; line-height: 30px; display: none; z-index: 1; box-sizing: border-box;}
+.register .content .country>div i{margin: 3px 5px;}
+.register .content .country>div ul{ overflow-x: hidden; overflow-y: auto; background: #fff;}
+.register .content .country>div ul li{border-bottom: 1px solid #ccc;border-top: 1px solid #ccc; box-sizing: border-box;}
+.register .content .country>div ul li:hover{background: #ccc;}
+.register .content .User p{margin-bottom: 30px; position: relative;}
+.register .content .User p:nth-child(1){height: 68px;}
+.register .content .User p .x-input{width: 316px; height: 45px; line-height: 45px; padding: 1px 15px; border:solid 1px #E4E4E4; outline: none;}
+.register .content .chinaUser p:nth-child(2) .x-input{width: 138px;}
+.register .content .User p .lable-txt{width: auto; height: auto; left: 15px; top: 17px; color: #A3A3A3; background: #fff; padding: 0; position: absolute; font-size: 14px;}
+.register .content .User p .yanzheng{width: 140px; font-size: 12px; line-height: 47px; padding: 0 5px; background: #fff; color: red; border: solid red 1px; text-align: center; display: inline-block; border-radius: 5px; cursor: pointer;}
+.register .content .User p input[type="checkbox"]{width: 15px; height: 15px; border: solid #E4E4E4 1px;}
+.register .content .User p a{color: #0563C3;}
+.register .content .User p input[type="button"]{width: 158px; height: 47px;margin-right: 10px; background: red; border: none; outline: none; color: #fff; font-size: 20px; cursor: pointer;}

@@ -1,0 +1,23 @@
+.banner .content{width: 1200px; margin: 0 auto;}
+.banner .content .banner-top{height: 415px; margin-bottom: 50px;}
+.banner .content .banner-top .banner-top-left{width: 820px; height: 373px; float: left; padding: 20px 20px 20px 20px; border: solid 1px #E9E9E9; background-color: #fff;}
+.banner .content .banner-top .banner-top-left .titstyle{color: #191919; font-size: 21px; line-height: 1; margin: 0 0 20px 0; padding-left: 6px; border-left:4px solid black;}
+.banner .content .banner-top .banner-top-left .titstyle a{float: right; color: #1A1A1A; font-size: 14px; line-height: 21px;}
+.banner .content .banner-top .banner-top-left dl{float: left; width: 164px; text-align: center;}
+.banner .content .banner-top .banner-top-left dl dt{color: #191919; font-size: 16px; line-height: 40px; margin-bottom: 10px; font-weight: bold; background: #F2F2F2;}
+.banner .content .banner-top .banner-top-left dl dd{color: #666; font-size: 14px; line-height: 2; cursor: pointer; display: block; width: 164px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.banner .content .banner-top .banner-top-right{width: 320px; height: 373px; float: right; padding: 20px 0; border: solid 1px #E9E9E9; background: #fff;}
+.banner .content .banner-top .banner-top-right .titstyle{color: #191919; font-size: 21px; line-height: 1; margin: 0 0 15px 20px; padding-left: 6px; border-left: 4px solid #1A1A1A;}
+.banner .content .banner-top .banner-top-right ul li{float: left; width: 140px; padding: 0 10px 15px;}
+.banner .content .banner-top .banner-top-right ul li img{width: 140px; height: 70px;}
+.banner .content .banner-inner{margin-top: 20px; padding-bottom: 10px; background-color: #fff; border: solid 1px #E9E9E9;}
+.banner .content .banner-inner>div{ height: 77px; position: relative;}
+.banner .content .banner-inner>div p{position: absolute;  padding: 20px 0 20px 20px; border-bottom: solid 1px #E9E9E9; top: 0; z-index: 4; background-color:#fff ;}
+.banner .content .banner-inner>div span{display: inline-block; color: #191919; font-size: 21px; line-height: 1; padding-left: 6px; margin: 0 10px 7px 0; border-left: solid 4px #1A1A1A;}
+.banner .content .banner-inner>div a{display: inline-block; width: 35.5px; color: #666; font-size: 18px; line-height: 36px; text-align: center;}
+.banner .content .banner-inner>div a.active{font-size: 36px; color: #666;}
+.banner .content .banner-inner>dl{margin: 20px; border-bottom: solid 1px #ccc; position: relative; display: block;}
+.banner .content .banner-inner>dl dt{width: 76px; height: 30px; color: #191919; font-size: 24px; line-height: 30px; text-align: center; font-weight: bold; vertical-align: top; display: inline-block;}
+.banner .content .banner-inner>dl dd{padding-bottom: 15px; vertical-align: top;display: inline-block;}
+.banner .content .banner-inner>dl dd ul{width: 990px;}
+.banner .content .banner-inner>dl dd ul li{width: 190px; line-height: 2.4; padding-left: 20px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14px; color: #666;}

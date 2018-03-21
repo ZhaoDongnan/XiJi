@@ -1,0 +1,56 @@
+.banner .content{width: 1200px; margin: 0 auto;background: #F5F5F5;}
+.banner .content .product{position: relative;}
+.banner .content .product-side{width: 550px; position: relative; top: 0; left: 0;}
+.banner .content .product-side .product-side-top{width: 550px; height: 550px; position: relative; cursor: pointer;}
+.banner .content .product-side .product-side-top .meng{width: 550px; height: 550px; position: absolute; z-index: 4;}
+.banner .content .product-side .product-side-top .movediv{width: 366px; height: 366px; position: absolute; z-index: 3; background: #b3d5ff; opacity: .5; display: none;}
+.banner .content .product-side .product-side-top img{width: 550px; height: 550px; position: absolute; left: 0; top: 0;}
+.banner .content .product-side .large-box{position: absolute; width: 400px; height: 400px; top: 0; right: -450px; overflow: hidden; display: none; z-index: 6;}
+.banner .content .product-side .large-box img{position: absolute; top: 0; left: 0;}
+.banner .content .product-side .product-side-bottom{margin-top: 10px; width: 550px; position: relative;}
+.banner .content .product-side .product-side-bottom .prev{width: 24px;background: #fff; height: 69px; line-height: 69px; top: 1px; position: absolute; margin-top: 5px; text-align: center;}
+.banner .content .product-side .product-side-bottom .prev a{font-size: 18px; margin-left: -1px;}
+.banner .content .product-side .product-side-bottom .prev a img{width: 22px; height: 12px;}
+.banner .content .product-side .product-side-bottom .next{width: 24px;background: #fff; height: 69px; line-height: 69px; top: 1px; position: absolute; margin-top: 5px; text-align: center; right: 0;}
+.banner .content .product-side .product-side-bottom .next a{font-size: 18px; margin-left: -1px;}
+.banner .content .product-side .product-side-bottom .next a img{width: 22px; height: 12px;}
+.banner .content .product-side .product-side-bottom>ul{width: 518px; height: 74px;margin: 0 20px; padding-left: 12px; padding-top: 5px; overflow: hidden;}
+.banner .content .product-side .product-side-bottom>ul li{margin: 0 8px; float: left; border-bottom: red solid 1px; width: 65px; height: 65px;}
+.banner .content .product-side .product-side-bottom>ul li img{width: 65px; height: 65px;}
+.banner .content .product-main{position: relative; width: 600px; float: right; top: -630px;}
+.banner .content .product-main .icon-box{height: 50px; line-height: 2;overflow: hidden;}
+.banner .content .product-main .icon-box img{width: 100px; height: 50px;}
+.banner .content .product-main .icon-box span{float: right; margin-top: 15px; line-height: 30px; background: red; color: #fff;}
+.banner .content .product-main h1{line-height: 1.5; margin-bottom: 5px; text-align: left; padding: 10px 0; color: #333; font-size: 18px; font-weight: bold; overflow: hidden; max-height: 4.5em;overflow: hidden;}
+.banner .content .product-main div:nth-child(3){position: relative; height: 50px;margin-bottom: 20px; }
+.banner .content .product-main div:nth-child(3) p{font-size: 14px;color: #333; line-height: 1.8;border: solid 1px #eee; border-radius: 5px;width: 578px; background: #fff; padding: 10px 10px 0; white-space: normal; overflow: hidden; height: 50px; overflow: hidden;}
+.banner .content .product-main div:nth-child(3) p:hover{padding-bottom: 10px; z-index: 5px; height: auto;}
+.banner .content .product-main ul:nth-child(4){color: #333; border: none; padding-bottom: 10px; background: url("http://img2.helper-sys.com/themes/ecstore/images/product_180119/pro_bg01.png") 0 0 no-repeat; margin-bottom: 5px; padding: 15px 0;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(1){ margin-bottom: 5px; margin-top: 0; height: 30px;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(1) span:nth-child(1){line-height: 35px; width: 75px;padding: 0 0 0 20px; float: left; display: inline-block;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(1) span:nth-child(2){margin-right: 20px; font-size: 29px; color: red;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(1) span:nth-child(3){color: #787878; font-size: 12px; text-decoration: line-through;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(2){height: 60px; display: block; line-height: 30px; overflow: hidden;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(2) span:nth-child(1){width: 75px;padding: 0 0 0 10px; float: left;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(2) ul:nth-child(2){width: 485px; margin-left: 95px; margin-right: 20px;font-size: 14px;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(2) ul:nth-child(2) li:nth-child(1) span:nth-child(1){color: red; margin-right: 5px; }
+.banner .content .product-main ul:nth-child(4) li:nth-child(2) ul:nth-child(2) li:nth-child(1) span:nth-child(2){color: #005fac; font-size: 14px;}
+.banner .content .product-main ul:nth-child(4) li:nth-child(2) ul:nth-child(2) li:nth-child(2) span:nth-child(1){color: red; margin-right: 5px;}
+.banner .content .product-main ul:nth-child(5){overflow: hidden;}
+.banner .content .product-main ul:nth-child(5) li:nth-child(1){font-size: 12px; height: 30px; line-height:30px; width: 75px;padding-left: 20px; text-align: left; float: left;}
+.banner .content .product-main ul:nth-child(5) li:nth-child(2){height: 40px;line-height: 40px; padding-top: 0; float: left;}
+.banner .content .product-main ul:nth-child(5) li:nth-child(2) span{margin-right: 10px;}
+.banner .content .product-main ul:nth-child(6){line-height: 2;}
+.banner .content .product-main ul:nth-child(6) li{height: 42px; line-height: 42px;}
+.banner .content .product-main ul:nth-child(6) li span{width: 75px; padding-left: 20px; text-align: left; float: left;}
+.banner .content .product-main ul:nth-child(6) li span:nth-child(2){padding: 0;}
+.banner .content .product-main .product-action .sl{border-bottom: 1px dotted #A3A3A3; height: 43px; line-height: 43px;}
+.banner .content .product-main .product-action .sl span:nth-child(1){width: 75px; padding-left: 20px; text-align: left; float: left;}
+.banner .content .product-main .product-action .sl span:nth-child(2){overflow: hidden; display: inline-block; line-height: 43px;}
+.banner .content .product-main .product-action .sl span:nth-child(2) a{display: inline-block; width: 20px; height: 20px; border: solid 1px #A9A9A9; text-align: center; line-height: 21px; background: #fff; color: #8B8B8B;}
+.banner .content .product-main .product-action .sl span:nth-child(2) a:hover{background: red; color: #fff;}
+.banner .content .product-main .product-action .sl span:nth-child(2) input{height: 21px;line-height: 21px; border: solid 1px #A9A9A9; text-align: center; width: 28px;}
+.banner .content .product-main .product-action li:nth-child(2){color: red; border-bottom: dotted 1px #999; padding: 10px 10px 10px 20px;}
+.banner .content .product-main .product-action li:nth-child(2) p{ font-size: 13px; line-height: 16px; background: url("http://img2.helper-sys.com/themes/ecstore/images/product_161107/pro_icon08.png") top left no-repeat; padding-left: 20px;}
+.banner .content .product-main .product-action ul:nth-child(2){margin-top: 30px;}
+.banner .content .product-main .product-action ul:nth-child(2) li{display: inline-block; float: left; padding: 0 50px; line-height: 50px;  background: red; color: #fff; border-radius: 3px;}

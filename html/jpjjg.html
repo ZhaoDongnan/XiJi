@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/page.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jpjjg.css" />
+	</head>
+
+	<body>
+		<div class="top"></div>
+		<script type="text/javascript">
+			$(".top").load("../requestHtml/top.html", function() {
+				$(".sel-box").on("click", function() {
+					$(".top-mask-meng").stop().show().next().stop().show();
+				})
+				var onoff = true;
+				$(".top-mask").children("div").children("div").on("click", function() {
+					if(onoff) {
+						$(this).children("div").slideDown(300).end().children("i").eq(0).html("&#xe65b;")
+						onoff = false;
+					} else {
+						$(this).children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}
+				})
+				$(".top-mask").on("mouseleave", function() {
+					setTimeout(() => {
+						$(this).children("div").children("div").children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}, 1000)
+				})
+				$(".top-mask").children("div").children("div").children("div").children("ul").children("li").on("click", function() {
+					onoff = false;
+					$(this).parent().parent().parent().children("i").html($(this).children("i").html())
+					$(this).parent().parent().parent().children("span").html($(this).children("span").html())
+					var hb = document.getElementsByClassName("div3")[0].children[1];
+					if(hb.innerHTML == "CNY（￥）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "cny"
+					}
+					if(hb.innerHTML == "USD（$）" || hb.innerHTML == "CAD（C$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "usd"
+					}
+					if(hb.innerHTML == "JPY（¥）" || hb.innerHTML == "HKD（H$）" || hb.innerHTML == "MOP（MOP$）" || hb.innerHTML == "TWD（NT$）" || hb.innerHTML == "NZD（NZ$）" || hb.innerHTML == "AUD（A$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "jpy"
+					}
+				})
+
+				$(".top-mask").children("button").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+				$(".top-mask").children(".clone").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+
+				$(".top-right").children("ul").children("li").eq(0).hover(function() {
+					$(this).children("span").slideDown(100)
+				}, function() {
+					$(this).children("span").slideUp(100)
+				})
+			})
+		</script>
+		<div class="header"></div>
+		<script type="text/javascript">
+			$(".header").load("../requestHtml/head.html", function() {
+				$(".load").hover(function() {
+					$(this).stop().animate({
+						height: "164px"
+					}, 200).css({
+						background: "#fff",
+						border: "1px solid #ccc"
+					})
+				}, function() {
+					$(this).stop().animate({
+						height: "37px"
+					}, 200, function() {
+						$(this).css({
+							background: "",
+							border: "none"
+						})
+					})
+				})
+				$(".car").hover(function() {
+					$(this).children("div").slideDown(100).end().css({
+						borderLeft: "1px solid #ccc",
+						borderRight: "1px solid #ccc",
+						borderTop: "1px solid #ccc",
+					})
+				}, function() {
+					$(this).children("div").slideUp(100).end().css({
+						border: ""
+					})
+				})
+			})
+		</script>
+		<div class="nav"></div>
+		<script type="text/javascript">
+			$(".nav").load("../requestHtml/nav.html", function() {
+				$(".fllist01-li").hover(function() {
+					$(this).children(".sub-box").css({
+						display: "block"
+					})
+				}, function() {
+					$(this).children(".sub-box").css({
+						display: "none"
+					})
+				});
+			})
+		</script>
+		<div class="banner">
+			<a>
+				<img src="http://img0.helper-sys.com/images/18/05/aac97f6a2cfa5262e2db4050f59f45f38569fb33.png?1517478701#w" />
+			</a>
+			<div class="tjzt">
+				<div class="content">
+					<p class="tjzt-tit tit">
+						<span>推荐专题</span>
+					</p>
+					<ul>
+						<li>
+							<a>
+								<img src="http://img4.helper-sys.com/images/17/45/73a2248003880ff3ce16eccfe436357c63d3ef62.png?1510112394#w" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="http://img2.helper-sys.com/images/17/30/1f6b307c79bc0d190167d6de03947ad46e5f4493.png?1500875665#w" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="http://img1.helper-sys.com/images/17/30/15bf0fb05d7dab9bd9526dde143cfe5fac5e9f23.png?1500875671#w" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="http://img1.helper-sys.com/images/17/30/0708ec9ac559d80a1473a385f5c7fda559c1915f.png?1500875679#w" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tzby">
+				<div class="content">
+					<p class="tzby-tit tit">
+						<span>套装包邮</span>
+					</p>
+					<ul class="goods-inner">
+
+					</ul>
+				</div>
+			</div>
+			<div class="rmdp">
+				<div class="content">
+					<p class="rmdp-tit tit">
+						<span>热卖单品</span>
+					</p>
+					<ul class="goods-inner">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="helper"></div>
+		<script type="text/javascript">
+			$(".helper").load("../requestHtml/helper.html")
+		</script>
+		<div class="footer"></div>
+		<script type="text/javascript">
+			$(".footer").load("../requestHtml/footer.html")
+		</script>
+		<div class="rightslide">
+			<ul>
+				<li>精品家居</li>
+				<li class="tz">
+					<a>推荐专题</a>
+				</li>
+				<li class="tz">
+					<a>套装包邮</a>
+				</li>
+				<li class="tz">
+					<a>热卖单品</a>
+				</li>
+				<li><img src="http://img1.helper-sys.com/themes/ecstore/images/topics/topic_right_btm.gif" /></li>
+			</ul>
+		</div>
+
+	</body>
+
+	<script src="../libs/pack.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jpjjg.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

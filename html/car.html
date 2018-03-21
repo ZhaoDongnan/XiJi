@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/page.css" />
+		<link rel="stylesheet" type="text/css" href="../css/car.css" />
+	</head>
+
+	<body>
+		<div class="top"></div>
+		<script type="text/javascript">
+			$(".top").load("../requestHtml/top.html", function() {
+				$(".sel-box").on("click", function() {
+					$(".top-mask-meng").stop().show().next().stop().show();
+				})
+				var onoff = true;
+				$(".top-mask").children("div").children("div").on("click", function() {
+					if(onoff) {
+						$(this).children("div").slideDown(300).end().children("i").eq(0).html("&#xe65b;")
+						onoff = false;
+					} else {
+						$(this).children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}
+				})
+				$(".top-mask").on("mouseleave", function() {
+					setTimeout(() => {
+						$(this).children("div").children("div").children("div").slideUp(300).end().children("i").eq(0).html("&#xe65d;")
+						onoff = true;
+					}, 1000)
+				})
+				$(".top-mask").children("div").children("div").children("div").children("ul").children("li").on("click", function() {
+					onoff = false;
+					$(this).parent().parent().parent().children("i").html($(this).children("i").html())
+					$(this).parent().parent().parent().children("span").html($(this).children("span").html())
+					var hb = document.getElementsByClassName("div3")[0].children[1];
+					if(hb.innerHTML == "CNY（￥）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "cny"
+					}
+					if(hb.innerHTML == "USD（$）" || hb.innerHTML == "CAD（C$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "usd"
+					}
+					if(hb.innerHTML == "JPY（¥）" || hb.innerHTML == "HKD（H$）" || hb.innerHTML == "MOP（MOP$）" || hb.innerHTML == "TWD（NT$）" || hb.innerHTML == "NZD（NZ$）" || hb.innerHTML == "AUD（A$）") {
+						document.getElementsByClassName("price")[0].children[1].children[0].className = "jpy"
+					}
+				})
+
+				$(".top-mask").children("button").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+				$(".top-mask").children(".clone").on("click", function() {
+					$(this).parent().stop().hide().prev().stop().hide();
+				})
+
+				$(".top-right").children("ul").children("li").eq(0).hover(function() {
+					$(this).children("span").slideDown(100)
+				}, function() {
+					$(this).children("span").slideUp(100)
+				})
+			})
+		</script>
+		<div class="header"></div>
+		<script type="text/javascript">
+			$(".header").load("../requestHtml/head.html", function() {
+				$(".load").hover(function() {
+					$(this).stop().animate({
+						height: "164px"
+					}, 200).css({
+						background: "#fff",
+						border: "1px solid #ccc"
+					})
+				}, function() {
+					$(this).stop().animate({
+						height: "37px"
+					}, 200, function() {
+						$(this).css({
+							background: "",
+							border: "none"
+						})
+					})
+				})
+				$(".car").hover(function() {
+					$(this).children("div").slideDown(100).end().css({
+						borderLeft: "1px solid #ccc",
+						borderRight: "1px solid #ccc",
+						borderTop: "1px solid #ccc",
+					})
+				}, function() {
+					$(this).children("div").slideUp(100).end().css({
+						border: ""
+					})
+				})
+			})
+		</script>
+		<div class="nav"></div>
+		<script type="text/javascript">
+			$(".nav").load("../requestHtml/nav.html", function() {
+				$(".fllist01-li").hover(function() {
+					$(this).children(".sub-box").css({
+						display: "block"
+					})
+				}, function() {
+					$(this).children(".sub-box").css({
+						display: "none"
+					})
+				});
+			})
+		</script>
+		<div class="banner">
+			<div class="content">
+				<ul>
+					<li>
+						<span>商品图</span>
+						<span>商品名</span>
+						<span>商品价格</span>
+						<span>商品原价</span>
+						<span>商家类型</span>
+						<span>是否包邮</span>
+						<span>删除</span>
+					</li>
+				</ul>
+				<ul>
+					<div class="kk">
+						<div>
+							<p>您的购物车空空如也</p>
+							<a href="http://localhost/XiJi/html/jpjjg.html">去逛逛</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<div class="helper"></div>
+		<script type="text/javascript">
+			$(".helper").load("../requestHtml/helper.html")
+		</script>
+		<div class="footer"></div>
+		<script type="text/javascript">
+			$(".footer").load("../requestHtml/footer.html")
+		</script>
+
+		<div class="right_navslide"></div>
+		<script type="text/javascript">
+			$(".right_navslide").load("../requestHtml/rightnavslide.html", function() {
+				(function() {
+					var bottom = 0;
+					onscroll = onload = function() {
+						var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+						if(scrolltop >= $(".banner").offset().top) {
+							$(".right_navslide").find(".top-link").slideDown(300)
+						} else {
+							$(".right_navslide").find(".top-link").slideUp(300)
+						}
+						if(scrolltop >= $(".helper").offset().top - 800) {
+							bottom += 100;
+							if(bottom >= 300) {
+								bottom = 300
+							}
+							$(".right_navslide").css({
+								bottom: bottom + 250
+							})
+						} else {
+							$(".right_navslide").css({
+								bottom: 200
+							})
+						}
+					}
+					$(".right_navslide").find("li").hover(function() {
+						$(this).children("a").children("span").css({
+							backgroundColor: "red"
+						}).end().children("em").show()
+					}, function() {
+						$(this).children("a").children("span").css({
+							backgroundColor: ""
+						}).end().children("em").hide()
+					})
+					$(".right_navslide").find(".top-link").on("click", function() {
+						clearInterval(this.timer);
+						this.timer = setInterval(() => {
+							var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+							if(scroll <= 0) {
+								clearInterval(this.timer);
+							} else {
+								scroll = scroll - 200;
+								document.documentElement.scrollTop = document.body.scrollTop = scroll;
+							}
+						}, 20);
+					})
+				})()
+			})
+		</script>
+	</body>
+
+	<script src="../js/car.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

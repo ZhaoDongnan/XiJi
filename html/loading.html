@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/loading.css"/>
+	</head>
+
+	<body>
+		<div class="loading">
+			<div class="content">
+				<div class="login-list">
+					<ul>
+						<li class="active">
+							<span>账号密码登录</span>
+						</li>
+						<li>
+							<span>手机快捷登录</span>
+						</li>
+					</ul>
+				</div>
+				<form class="user zhanghao" >
+					<p>
+						<input type="text" class="x-input username" />
+						<span class="lable-txt">请输入手机号/用户名/邮箱</span>
+						<span style="color: red; display: none;">请输入正确的手机号</span>
+					</p>
+					<p>
+						<input type="password" class="x-input password" />
+						<span class="lable-txt">请输入密码</span>
+					</p>
+					<p>
+						<input type="checkbox" class="jizhu"/><span>记住账号</span>
+						<input type="checkbox" class="zidong"/><span>两周内自动登录</span>
+						<a>忘记密码</a>
+					</p>
+					<p><input type="button" value="登 录" class="load"/></p>
+					<p><input type="button" value="30秒注册" class="register"/></p>
+					<p class="otherload"><span>其他登录方式</span></p>
+					<p>
+						<span class="wb"><a>微博</a></span>
+						<span class="qq"><a>QQ</a></span>
+						<span class="wx"><a>微信</a></span>
+					</p>
+				</form>
+				<form class="user phone" style="display: none;">
+					<p>
+						<span class="baliu">+86</span>
+						<input type="text" class="x-input username" />
+						<span class="lable-txt">请输入手机号/用户名/邮箱</span>
+						<span style="color: red; display: none;">请输入正确的手机号</span>
+					</p>
+					<p>
+						<input type="text" class="x-input" />
+						<span class="lable-txt" class="password">请输入短信验证码</span>
+						<span class="yanzheng">获取短信验证码</span>
+					</p>
+					<p>
+						<input type="checkbox" class="jizhu"/><span>记住账号</span>
+						<input type="checkbox" class="zidong"/><span>两周内自动登录</span>
+						<a>忘记密码</a>
+					</p>
+					<p><input type="button" value="登 录" class="load"/></p>
+					<p><input type="checkbox" class="weizhuce"/>如果您的账号未注册，则为您自动注册，也将默认您接受<a>注册协议</a>全部内容</p>
+					
+					
+					<p class="otherload"><span>其他登录方式</span></p>
+					<p>
+						<span class="wb"><a>微博</a></span>
+						<span class="qq"><a>QQ</a></span>
+						<span class="wx"><a>微信</a></span>
+					</p>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../libs/pack.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+</html>

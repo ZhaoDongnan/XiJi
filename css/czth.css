@@ -1,0 +1,39 @@
+.banner .content{width: 1200px; margin: 0 auto;background: #F5F5F5;}
+.banner .content>a{height: 390px; display: block;}
+.banner .content>a>img{height: 390px; width: 1200px; margin-top: -25px;}
+.banner .content .banner-top{margin: 0 0 15px 0;}
+.banner .content .banner-top>ul{margin-left: -48px; overflow: hidden;}
+.banner .content .banner-top>ul li{float: left; width: 576px; margin: 30px 0 0 48px; border-top: solid 1px #000; border-radius: 5px;}
+.banner .content .banner-top>ul li>img{width: 576px; height: 239px; display: block;}
+.banner .content .banner-top>ul li>p{height: 70px; line-height: 70px; font-size: 21px; padding: 0 20px 0 25px; background: #fff; color: #000;}
+.banner .content .banner-top>ul li>p>a:nth-child(1){color: red;}
+.banner .content .banner-top>ul li>p>a:nth-child(2){color: #333; float: right; line-height: 70px; font-size: 16px; padding-right: 20px; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/preferential/icon01.png") right center no-repeat; font-weight: bold;}
+.banner .content .product-box{margin-top: 35px; overflow: hidden;}
+.banner .content .product-box  ul{margin-left: -10px;}
+.banner .content .product-box  ul li{float: left; width: 222px; height: 330px; margin: 10px 0 0 10px; background: #fff; padding: 10px 5px;}
+.banner .content .product-box  ul li .img-box{width: 202px; height: 162px;text-align: center; margin-bottom: 3px;}
+.banner .content .product-box  ul li .img-box a img{width: 162px; height: 162px; vertical-align: top;}
+.banner .content .product-box  ul li .txt-box{margin: 0; color: #999; height: 50px; font-size: 12px; line-height: 1.5;}
+.banner .content .product-box  ul li .txt-box p:nth-child(1){color: #333; font-size: 16px; font-weight: bold;}
+.banner .content .product-box  ul li .txt-box p:nth-child(2){text-decoration: line-through;}
+.banner .content .product-box  ul li .tit-box{margin-bottom: 10px; }
+.banner .content .product-box  ul li .tit-box a{font-size: 12px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space:pre-wrap; display: inline-block; height: 36px;width: 222px;}
+.banner .content .product-box  ul li .tag-box{height: 26px;}
+.banner .content .product-box  ul li .tag-box span{background:#fff; color: red; border: solid 1px red;}
+.banner .content .product-box  ul li>a{display: block; border: solid 1px red; border-radius: 3px; color: red; height: 32px; line-height: 32px; line-height: 32px; background: #fff; text-align: center; font-size: 16px; margin: 5px 0 0 0 !important; cursor: pointer;}
+.banner .content .product-box  ul li>a:hover{background: red; color: #fff;}
+.banner .content .product-box  ul li.tit{font-size: 60px; line-height: 1.2; text-align: center; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/preferential/tit_bg01_new.png"); color: #6A996C; padding: 0; width: 232px; height: 350px;}
+.banner .content .product-box:nth-child(4)  ul li.tit{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/tit_bg02_new.png");}
+.banner .content .product-box:nth-child(5)  ul li.tit{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/tit_bg03_new.png");}
+.banner .content .product-box:nth-child(6)  ul li.tit{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/tit_bg04_new.png");}
+.banner .content .product-box:nth-child(7)  ul li.tit{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/tit_bg05_new.png");}
+.banner .content .product-box  ul li.tit p{height:300px; padding-top: 90px;}
+.banner .content .product-box  ul li.tit p span{border-top: 6px solid #6A996C; display: block; width: 32px; height: 6px; margin: 25px auto 0; font-size: 0; }
+.banner .content .product-box  ul li.more{ padding: 0; font-weight: bold; line-height: 350px; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/preferential/more_bg01_new.png"); width: 232px; text-align: center;height: 350px;}
+.banner .content .product-box  ul li.more a{display: inline-block; color: #000; font-size: 20px; text-align: center; padding-right: 15px; background: url("http://img2.helper-sys.com/public/app/b2c/statics/images/preferential/icon02.png") center right no-repeat; border: none;}
+.banner .content .product-box:nth-child(4)  ul li.more{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/more_bg02_new.png");}
+.banner .content .product-box:nth-child(5)  ul li.more{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/more_bg03_new.png");}
+.banner .content .product-box:nth-child(6)  ul li.more{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/more_bg04_new.png");}
+.banner .content .product-box:nth-child(7)  ul li.more{background: url("http://img1.helper-sys.com/public/app/b2c/statics/images/preferential/more_bg05_new.png");}
+.banner .content .product-box  ul li:hover{border: 2px solid #ccc; padding: 8px 2.5px;}
+.banner .content .product-box  ul li.tit:hover,.banner .content .product-box  ul li.more:hover{border: none; padding:0;}
